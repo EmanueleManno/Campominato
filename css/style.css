@@ -1,0 +1,105 @@
+/*CSS Properties*/
+:root {
+    --acquagreen: #7fffd4;
+    --cols: 10;
+}
+
+/*CSS Reset*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Generics*/
+body {
+    background-color: var(--acquagreen);
+}
+
+/*Header*/
+header {
+    height: 10vh;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Main*/
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #LOGO */
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*Immagine del Logo*/
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* #CONTROLS */
+#play-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+/*Seleziona il livello*/
+#select-level {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/*Griglia*/
+#grid {
+    margin: 20px auto;
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*CELLE*/
+#grid .cell {
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid .cell {
+    height: calc(100% / var(--cols));
+    width: calc(100% / var(--cols));
+}
+
+/*Celle cliccate*/
+#grid .cell.clicked {
+    color: white;
+    background-color: dodgerblue;
+    cursor: not-allowed;
+}
+
+/*Bombe*/
+#grid .cell.clicked.bomb {
+    color: white;
+    background-color: red;
+}
+
+
+

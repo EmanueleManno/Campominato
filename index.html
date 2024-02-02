@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Informazioni aggiuntive-->
+    <meta name="description" content="Esercizio sul campo minato" />
+    <meta name="author" content="Emanuele Manno Studente Classe 100" />
+    <meta name="keywords" content="campo, minato, esercizio" />
+    <!--Collegamento del file CSS con l'HTML-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--Collegamento del file JS con l'HTML-->
+    <script defer src="js/script.js"></script>
+    <!--Icona della pagina-->
+    <link rel="icon" href="img/icona.jpg" type="image/jpg" />
+    <!--Titolo della pagina-->
+    <title>Campo Minato</title>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <!--Logo-->
+      <div class="logo">
+        <!--Immagine del logo-->
+        <img src="img/bomba logo.png" alt="logo" />
+        <!--Titolo-->
+        <h1>Campo Minato</h1>
+      </div>
+      <!--Punteggio-->
+      <div>Score: <span id="score"></span></div>
+      <!--Controlli-->
+      <div class="controls">
+        <!--Seleziona livello-->
+        <select id="select-level">
+          <!--Opzioni-->
+          <option value="easy">Facile</option>
+          <option value="normal">Normale</option>
+          <option value="hard">Difficile</option>
+        </select>
+        <!--Bottone-->
+        <button id="play-button">Gioca!</button>
+      </div>
+    </header>
+    <!--Main-->
+    <main>
+      <!--Contenitore-->
+      <div class="container">
+        <!--Griglia-->
+        <div id="grid">
+          <h2>Seleziona il livello di difficoltà e clicca "Gioca!"</h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
